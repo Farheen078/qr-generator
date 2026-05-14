@@ -9,7 +9,7 @@ import socketserver
 import webbrowser
 import os
 
-# ---------- HTML PAGE (embedded) ----------
+
 HTML_PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -208,7 +208,7 @@ HTML_PAGE = """<!DOCTYPE html>
 </html>
 """
 
-# ---------- SIMPLE HTTP SERVER ----------
+
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/":
